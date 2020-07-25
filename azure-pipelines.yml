@@ -13,6 +13,9 @@ jobs:
   - job: release
     strategy:
       matrix:
+        bullseye:
+          containerImage: debian
+          containerTag: bullseye
         buster:
           containerImage: debian
           containerTag: buster
